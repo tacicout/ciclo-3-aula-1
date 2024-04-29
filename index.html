@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal de Informações</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <img
+        src="./assets/img/imagens-p/Patronnir.png"
+        alt="Imagem da logo da empresa de pizaria"
+      />
+      <form id="billForm">
+        <label for="totalBill">Valor Total da Conta:</label>
+        <!-- id="totalBill"  -->
+        <input
+          type="text"
+          id="totalBill"
+          name="totalBill"
+          pattern="[0-9]+"
+          placeholder="100,00 R$"
+          required
+        />
+        <label for="serviceCharge">Taxa de Serviço:</label>
+        <!-- id="serviceCharge"  -->
+        <input
+          type="number"
+          id="serviceCharge"
+          name="serviceCharge"
+          pattern="[0-9]+"
+          placeholder="Sim"
+          required
+        />
+
+        <label for="numOfPayers">Quantidade de Pagantes:</label>
+        <!-- id="numOfPayers"  -->
+        <input
+          type="number"
+          id="numOfPayers"
+          name="numOfPayers"
+          pattern="[0-9]+"
+          placeholder="2"
+          required
+        />
+
+        <button type="button" id="calculateButton">Calcular</button>
+      </form>
+      <div id="discountModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Esse pagamento terá desconto?</h2>
+          <p>Apenas para contas pagas em Pix, débito ou dinheiro.</p>
+          <div class="modal-content-div">
+            <button id="noDiscountButton" class="noDiscountButton">Não</button>
+            <button id="yesDiscountButton" class="yesDiscountButton">
+              Sim
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Detalhes da Compra</h2>
+          <p id="resultText">
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

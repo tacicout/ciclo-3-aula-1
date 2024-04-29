@@ -1,0 +1,14 @@
+{
+  "name": "ciclo-3-aula-1",
+  "version": "1.0.0",
+  "description": "- [Resumo do projeto](#resumo-do-projeto)\r   - [Objetivos de aprendizagem](#objetivos-de-aprendizagem)\r   - [Orientações:](#orientações)\r   - [Critérios de aceitação](#critérios-de-aceitação)\r   - [Links utéis:](#links-utéis)\r   - [Dicas](#dicas)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node js/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
